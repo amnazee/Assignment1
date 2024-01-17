@@ -1,0 +1,47 @@
+[
+  {
+    "title": "The Godfather",
+    "writer": "William Shakespeare",
+    "metadata": {
+      "price": 1500,
+      "categories": [
+        "crime",
+        "drama"],
+      "runtime":  175
+    }
+  },
+  {
+    "title": "Spirited Away",
+    "writer": "William Shakespeare",
+    "metadata": {
+      "price": 1500,
+      "categories": [
+        "animation",
+        "adventure"],
+      "runtime":  125
+    }
+  },
+  {
+    "title": "Big Hero 6",
+    "writer": "Chris Williams",
+    "metadata": {
+      "price": 1500,
+      "categories": [
+        "fantasy",
+        "sci-fi"],
+      "runtime":  283
+    }
+  },
+  {
+    "title": "WALL·E",
+    "writer": "Andrew Stanton",
+    "metadata": {
+      "price": 3000,
+      "categories": [
+        "animation",
+        "adventure"
+      ],
+      "runtime": 98
+    }
+  }
+]
