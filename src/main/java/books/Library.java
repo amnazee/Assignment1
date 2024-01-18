@@ -22,12 +22,15 @@ public class Library{
         }
     }
 
-    public void add(Media newMedia){
+    public void add(Media newMedia, String message){
         media.add(newMedia);
-        System.out.println("Media added successfully");
+        Publisher.notifySubscribers(message);
+//        System.out.println("Media added successfully");
     }
-    public void remove(Media oldMedia){
+
+    public void remove(Media oldMedia, String message){
         media.remove(oldMedia);
-        System.out.println("Media removed successfully");
+        Publisher.notifySubscribers(message);
+//        System.out.println("Media removed successfully");
     }
 }

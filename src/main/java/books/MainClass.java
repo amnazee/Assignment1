@@ -2,11 +2,14 @@ package books;
 
 public class MainClass {
     public static void main(String[] args) {
-        Books book1 = new Books();
-        book1.setTitle("The Great Gatsby");
-        book1.setAuthor("F. Scott Fitzgerald");
-        book1.setMetadata(new Books.Metadata());
-        book1.getMetadata().setPrice(25);
-        System.out.println(book1.writeToJson(book1));
+        Books newBook= new Books();
+        Subscribers consoleSubscribers=new ConsoleSubscriber();
+        Subscribers fileSubscribers=new FileSubscriber();
+        newBook.setTitle("New Book 3");
+        consoleSubscribers.update(newBook.getTitle());
+        fileSubscribers.update(newBook.getTitle());
+        Publisher publisher=new Publisher();
+        publisher.addSubscribers(consoleSubscribers);
+        publisher.removeSubscribers(consoleSubscribers);
     }
 }

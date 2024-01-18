@@ -51,7 +51,6 @@ public class Books extends Media{
 
     @Override
     public String writeToJson(Media mediaToAppend) {
-//       String json=new Gson().toJson(mediaToAppend);
        Gson gson = new GsonBuilder().setPrettyPrinting().create();
        String json= gson.toJson(mediaToAppend);
        return json;
